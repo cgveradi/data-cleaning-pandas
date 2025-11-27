@@ -1,25 +1,34 @@
 # 🦈 Sharkboy & Lavagirl Surf Camp – Shark Attack Analysis
 
-## Scenario
+## Hypothesis & Camp Strategy
 
-Sharkboy & Lavagirl Surf Camp plans a **U.S. coastal surf school** targeting **teenagers (12–20 years)**. Goal: **safe, professional surf lessons** guided by historical shark attack data.
+**Problem:**  
+Many young surfers—especially beginners and teenagers—enter the ocean without sufficient knowledge about marine ecosystems, shark behavior, or safe surfing practices.
 
----
+**Hypothesis:**
 
-## Step 1 — Hypotheses
+- _Teenagers (12–20) may underestimate the risks of coastal sports, including surfing, making them vulnerable to shark attacks._
+- _A structured surf camp with safety education can reduce risk and promote safe practices._
 
-- **Location & Risk:** Sharks attack more in some U.S. states → choose safe locations.
-- **Activity Risk:** Surfing, swimming differ in risk → plan lessons safely.
-- **Demographics:** Age/gender affect attack likelihood → tailor safety campaigns.
-- **Seasonality:** Shark attacks vary by month → schedule lessons accordingly.
+**Camp Strategy:**
 
-Focus: **U.S. teenagers, low-risk locations**.
+1. **Safe Location:** Choose U.S. coastal areas with historically low shark activity.
+2. **Target Age Group:** Focus on teenagers 12–20 years old.
+3. **Structured Activities:** Supervised surfing lessons plus low-risk beginner activities.
+4. **Risk Awareness:** Integrate safety education on sharks, ocean behavior, and emergency response.
+5. **Seasonal Scheduling:** Hold lessons during historically safer months.
+
+**Expected Outcome:**
+
+- Teens learn surfing in a **safe and controlled environment**.
+- Exposure to risk is minimized using **data-informed decisions**.
+- The camp positions itself as **professional, safe, and teen-focused**, supporting both safety and business growth.
 
 ---
 
 ## Day 1 — Data Tasks
 
-- Loaded dataset, inspected columns, missing values, duplicates.
+- Loaded dataset, inspected columns, missing values, and duplicates.
 - **Issues & fixes:**
 
 | Column   | Issue                | Action Taken                 |
@@ -34,18 +43,18 @@ Focus: **U.S. teenagers, low-risk locations**.
 
 ## Day 2 — Data Cleaning
 
-- Standardized columns, cleaned categories, removed duplicates.
+- Standardized column names, cleaned categorical values, removed duplicates.
 - Filled missing values (median/mode/‘Unknown’).
-- Created: `age_group`, `Activity_Category`, `Season`.
+- Created additional columns: `age_group`, `Activity_Category`, `Season`.
 
 ---
 
 ## Day 3 — Aggregation & Analysis
 
-- Filtered: **U.S. teens 12–20, 1950+**.
+- Filtered data: **U.S. teens 12–20, from 1950 onward**.
 - Aggregated:
-  - Top states & activities for attacks.
-  - Age patterns.
+  - Top states and activities for shark attacks.
+  - Age patterns within the target group.
   - Pivot tables: State × Activity.
 - Key outcomes: fatal vs non-fatal attacks.
 
@@ -53,10 +62,11 @@ Focus: **U.S. teenagers, low-risk locations**.
 
 ## Day 4 — Insights & Recommendations
 
-- **Safe Locations:** Coastal U.S. states with historically low attacks.
-- **High-Risk Activities:** Surfing → implement extra safety; others low-risk.
-- **Target Age:** Teenagers 12–20 → focus safety campaigns here.
-- **Fatality:** Mostly non-fatal; still prepare emergency response.
-- **Combined View:** Heatmap State × Activity guides operational decisions.
+- **Safe Locations:** Coastal U.S. states with historically low attacks → ideal camp sites.
+- **High-Risk Activities:** Surfing is higher risk → implement supervised sessions; other activities are lower risk.
+- **Target Age:** Teens 12–20 → focus safety campaigns and training here.
+- **Fatality:** Most attacks are non-fatal, but emergency preparedness is recommended.
+- **Combined View:** Heatmap of State × Activity guides **location, activity planning, and supervision strategies**.
 
-**✅ Outcome:** Data-driven, safe, and profitable teen surf school.
+**✅ Outcome:**  
+Enables a **data-driven, safe, and profitable teen surf school** with targeted lessons, optimal locations, informed safety protocols, and structured risk management.
